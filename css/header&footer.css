@@ -1,0 +1,60 @@
+.navbar {
+    background-color: #ffffff;
+    display: grid;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    column-gap: normal;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+    "lg pg pg pg pg pro";
+}
+
+#logo{
+ grid-area:lg ;
+ font-family: 'Passions Conflict';
+ font-size: 2.6rem;
+}
+#pages{
+    grid-area:pg ; 
+    display: flex;
+    justify-content: center; 
+    grid-gap: 2rem;
+}
+
+
+#profile{
+    grid-area:pro ;
+    text-align: right;
+}
+h3{
+    margin: 0;
+    font-weight: normal;
+}
+
+
+
+
+.footer-bar{
+background-color: #ffffff;
+display: grid;
+margin-top: 100px;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(2,1fr);
+grid-gap: 3rem;
+grid-template-areas: 
+"nw nw nw fc fc"
+"lg lg lg pr pr"
+;
+
+
+}
+.news{
+    grid-area: nw;
+}
+.footer-content{
+grid-area: fc;
+}
+.privcy{
+    grid-area: pr;
+}

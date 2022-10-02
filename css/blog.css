@@ -1,0 +1,65 @@
+.container{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 30px repeat(4,1fr);
+    grid-template-rows:100px 70px 400px 1fr 1fr;
+    grid-template-areas:
+    "sd sd av bio bio bio bio"
+    "sd sd  hd hd hd hd hd "
+    "sd sd  main main main main main "
+    "inf inf  main main main main main"
+    "ft ft main main main main main" ;
+    
+    }
+  
+    .header{
+        grid-area: hd;
+        font-size: smaller;
+        justify-content: space-between;
+        display: flex;
+        color: rgb(91, 91, 91);
+        padding-left: 1.5rem;
+    }
+    .avatar{
+        grid-area: av;
+        background-image: url("https://cdn.thegentlemansjournal.com/wp-content/uploads/2015/10/SteveJobsSquare-TGJ.jpg");
+        background-size: cover;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+        margin-left: 1.5rem;
+     
+
+    }
+
+    .bio{
+        grid-area: bio;
+
+    }
+
+    .footer{
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    font-size: larger;
+    align-items: center;
+    }
+    .info{
+       grid-area: inf;
+       color: rgb(91, 91, 91);
+       font-size: smaller;
+    }
+    .sidebar{
+        grid-area: sd;
+        background-image: url("https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHNjZW5lcnl8ZW58MHx8MHx8&w=1000&q=80");
+        
+    }
+    .content{
+        grid-area: main;
+        padding-left: 1.5rem;
+        line-height: 2.7rem;
+        
+    }
