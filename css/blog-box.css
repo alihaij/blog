@@ -1,0 +1,17 @@
+@import url(blog.css);
+
+.blog-box{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 30px repeat(4,1fr);
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-areas:
+    "sd sd hd hd hd hd hd"
+    "sd sd  main main main main main "
+    "sd sd  main main main main main "
+    "sd sd main main main main main"
+    
+    ;
+}

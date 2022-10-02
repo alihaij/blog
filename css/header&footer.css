@@ -14,6 +14,7 @@
  grid-area:lg ;
  font-family: 'Passions Conflict';
  font-size: 2.6rem;
+ align-self: flex-end;
 }
 #pages{
     grid-area:pg ; 
@@ -33,9 +34,10 @@ h3{
 }
 
 
-
+/* footer */
 
 .footer-bar{
+padding: 20px 30px 30px 10px;
 background-color: #ffffff;
 display: grid;
 margin-top: 100px;
@@ -51,10 +53,82 @@ grid-template-areas:
 }
 .news{
     grid-area: nw;
+    align-self: flex-end;
+    margin-left: 100px;
 }
-.footer-content{
+.footer-content{ 
+    align-self: flex-end;
 grid-area: fc;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-areas: "cn cp sm";
+grid-gap: 10px;
+}
+.content-inside-footer{
+    grid-area: cn;
+    align-self: flex-end;
+    font-size: 12px;
+}
+.marg{
+
+    margin-left: 100px;
+}
+.title-footer{
+    font-size: 20px;
+}
+.social-media{
+    grid-area: sm;
+    align-self: flex-end;
+    font-size: 12px;
+}
+.company{
+    grid-area: cp;
+    align-self: flex-end;
+    font-size: 12px;
 }
 .privcy{
+    text-align: center;
+    align-self: flex-end;
     grid-area: pr;
+    bottom: 0px;
+    color: #9b9b9b;
+    font-size: small;
 }
+
+  
+ 
+
+.buttonIn {
+    width: 300px;
+    position: relative;
+}
+ 
+input {
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: 0;
+    height: 30px;
+    border-bottom: 2px solid #9b9b9b;
+}
+ 
+button {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 2px;
+    height: 30px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transform: translateX(2px);
+}
+
+
+ 
+
+ 
