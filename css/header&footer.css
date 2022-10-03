@@ -5,30 +5,32 @@
     padding: 20px;
     color: black;
     column-gap: normal;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-    "lg pg pg pg pg pro";
+        "lg pg pg pg pg pro";
 }
 
-#logo{
- grid-area:lg ;
- font-family: 'Passions Conflict';
- font-size: 2.6rem;
- align-self: flex-end;
+#logo {
+    grid-area: lg;
+    font-family: 'Passions Conflict';
+    font-size: 2.6rem;
+    align-self: flex-end;
 }
-#pages{
-    grid-area:pg ; 
+
+#pages {
+    grid-area: pg;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     grid-gap: 2rem;
 }
 
 
-#profile{
-    grid-area:pro ;
+#profile {
+    grid-area: pro;
     text-align: right;
 }
-h3{
+
+h3 {
     margin: 0;
     font-weight: normal;
 }
@@ -36,57 +38,65 @@ h3{
 
 /* footer */
 
-.footer-bar{
-padding: 20px 30px 30px 10px;
-background-color: #ffffff;
-display: grid;
-margin-top: 100px;
-grid-template-columns: repeat(5,1fr);
-grid-template-rows: repeat(2,1fr);
-grid-gap: 3rem;
-grid-template-areas: 
-"nw nw nw fc fc"
-"lg lg lg pr pr"
-;
+.footer-bar {
+    padding: 20px 30px 30px 10px;
+    background-color: #ffffff;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3rem;
+    grid-template-areas:
+        "nw nw nw fc fc"
+        "lg lg lg pr pr"
+    ;
 
 
 }
-.news{
+
+.news {
     grid-area: nw;
     align-self: flex-end;
     margin-left: 100px;
 }
-.footer-content{ 
+
+.footer-content {
     align-self: flex-end;
-grid-area: fc;
-display: grid;
-grid-template-columns: repeat(3,1fr);
-grid-template-areas: "cn cp sm";
-grid-gap: 10px;
+    grid-area: fc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "cn cp sm";
+    grid-gap: 10px;
 }
-.content-inside-footer{
+
+.content-inside-footer {
     grid-area: cn;
     align-self: flex-end;
     font-size: 12px;
 }
-.marg{
+
+.marg {
 
     margin-left: 100px;
 }
-.title-footer{
+
+.title-footer {
     font-size: 20px;
 }
-.social-media{
+
+.social-media {
     grid-area: sm;
     align-self: flex-end;
     font-size: 12px;
 }
-.company{
+
+.company {
     grid-area: cp;
     align-self: flex-end;
     font-size: 12px;
 }
-.privcy{
+
+.privcy {
     text-align: center;
     align-self: flex-end;
     grid-area: pr;
@@ -95,14 +105,14 @@ grid-gap: 10px;
     font-size: small;
 }
 
-  
- 
+
+
 
 .buttonIn {
     width: 300px;
     position: relative;
 }
- 
+
 input {
     border: 0;
     margin: 0px;
@@ -112,7 +122,7 @@ input {
     height: 30px;
     border-bottom: 2px solid #9b9b9b;
 }
- 
+
 button {
     position: absolute;
     top: 0;
@@ -127,8 +137,3 @@ button {
     background-color: white;
     transform: translateX(2px);
 }
-
-
- 
-
- 

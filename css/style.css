@@ -8,23 +8,26 @@
 } */
 
 
-body{
+body {
     background-color: aliceblue;
     font-size: 26px;
     margin: 0%;
     font-family: 'Roboto', sans-serif;
-   
+
 }
 
-h1{
+h1,h2,h3 {
     margin-top: 0;
+    font-family: 'Nanum Myeongjo', serif;
+
 }
 
 
 
-hr{
-    margin-left: 300px;
-    margin-right: 300px;
+
+hr {
+    margin: 150px 300px 0 300px;
+ 
 }
 
 
@@ -42,17 +45,17 @@ hr{
 /* media style */
 
 @media (max-width: 600px) {
-    .container{
+    .container {
         display: grid;
         width: 90%;
         margin: auto;
         margin-top: 150px;
-        grid-template-columns: 30px repeat(7,1fr);
+        grid-template-columns: 30px repeat(7, 1fr);
         grid-template-rows: 70px 400px 1fr;
         grid-template-areas:
-        "hd hd hd hd hd hd hd hd"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft" ;
-        
-        }
+            "hd hd hd hd hd hd hd hd"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+
+    }
 }
