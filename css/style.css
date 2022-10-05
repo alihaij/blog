@@ -8,6 +8,7 @@
 } */
 
 
+
 body {
     background-color: aliceblue;
     font-size: 26px;
@@ -50,7 +51,7 @@ hr {
         width: 90%;
         margin: auto;
         margin-top: 150px;
-        grid-template-columns: 30px repeat(7, 1fr);
+        grid-template-columns: 30px repeat(6, 1fr);
         grid-template-rows: 70px 400px 1fr;
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
