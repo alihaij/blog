@@ -45,18 +45,46 @@ hr {
 
 /* media style */
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .container {
-        display: grid;
-        width: 90%;
+        width: 100%;
         margin: auto;
-        margin-top: 150px;
-        grid-template-columns: 30px repeat(6, 1fr);
-        grid-template-rows: 70px 400px 1fr;
-        grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "main main main main main main main main"
-            "ft ft ft ft ft ft ft ft";
-
+        grid-template-columns:  repeat(2, 1fr);
+        grid-template-rows:500px 50px 150px 1fr 100px ;
+            grid-template-areas:
+            "sd sd "
+            "hd hd "
+            "av bio "
+            "main main"
+            "inf ft";
     }
+    .bio{
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 800px) {
+    .navbar{
+        font-size: 1.25rem;
+        padding: 20px;
+        column-gap: normal;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "lg lg pro pro"
+        "pg pg pg pg";
+    }
+    .footer-bar {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "nw nw nw "
+            "fc fc fc"
+            "lg  pr pr"
+        ;
+    }
+    
+.footer-content {
+    text-align: center;
+}
+    
 }
