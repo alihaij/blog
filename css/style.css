@@ -78,12 +78,14 @@ hr {
         font-size: 1.25rem;
         padding: 20px;
         column-gap: normal;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas:
-            "lg lg pro pro"
-            "pg pg pg pg";
+            "lg  pro "
+            "pg pg ";
+            grid-gap: 0;
     }
+    
 
     .footer-bar {
         grid-template-columns: repeat(3, 1fr);
@@ -97,6 +99,16 @@ hr {
 
     .footer-content {
         text-align: center;
+    }
+    #home{
+        display: none;
+    }
+    #icon{
+        display: block;
+    }
+    .news {
+        
+        margin-left: 0;
     }
 
 }

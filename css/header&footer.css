@@ -34,6 +34,9 @@ h3 {
     margin: 0;
     font-weight: normal;
 }
+#icon{
+    display: none;
+}
 
 
 /* footer */
@@ -66,7 +69,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "cn cp sm";
-    grid-gap: 10px;
+    
 }
 
 .content-inside-footer {
